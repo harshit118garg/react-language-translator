@@ -1,0 +1,123 @@
+html {
+  font-size: 62.5%;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  background: linear-gradient(
+      to right bottom,
+      #deb565,
+      #ef945e,
+      #f5706f,
+      #e8538f,
+      #bf4cb4
+    )
+    no-repeat center center fixed;
+}
+
+.App {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+h2 {
+  font-size: 3rem;
+  text-transform: uppercase;
+  letter-spacing: 0.1rem;
+  word-spacing: 0.2rem;
+  margin-bottom: 0;
+}
+
+.selectLang {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  margin-bottom: 10px;
+  padding: 10px 0;
+  width: 450px;
+  /* background-color: red; */
+}
+
+h3 {
+  color: rgb(52, 52, 51);
+  font-size: 1.6rem;
+  text-transform: uppercase;
+}
+
+select {
+  text-align: center;
+  padding: 5px;
+  font-size: 1.35rem;
+  text-transform: uppercase;
+  font-weight: 700;
+  letter-spacing: 0.1rem;
+  background-color: lavenderblush;
+  border-radius: 10px;
+  border: none;
+}
+
+textarea {
+  background-color: rgb(52 52 51);
+  color: white;
+  outline: none;
+  resize: none;
+  overflow: auto;
+  width: 520px;
+  height: 150px;
+  padding: 12px;
+  border: none;
+  border-radius: 20px;
+  margin-bottom: 20px;
+  box-shadow: 0px 15px 21px 4px rgba(0, 0, 0, 0.69);
+  -webkit-box-shadow: 0px 15px 21px 4px rgba(0, 0, 0, 0.69);
+  -moz-box-shadow: 0px 15px 21px 4px rgba(0, 0, 0, 0.69);
+}
+
+.btn {
+  background-image: linear-gradient(
+    to right,
+    #002342,
+    #004a66,
+    #00736e,
+    #44975d,
+    #aeb34d
+  );
+  padding: 12px;
+  font-size: 2rem;
+  border: none;
+  border-radius: 18px;
+  color: blanchedalmond;
+  font-weight: 800;
+  text-transform: uppercase;
+  cursor: pointer;
+  margin: 10px;
+  -webkit-box-shadow: -10px 0px 13px -7px #000000, 10px 0px 13px -7px #000000,
+    5px 5px 15px 5px rgb(0 0 0 / 0%);
+  box-shadow: -10px 0px 13px -7px #000000, 10px 0px 13px -7px #000000,
+    5px 5px 15px 5px rgb(0 0 0 / 0%);
+}
+
+@media screen and (max-width: 768px) {
+  h2 {
+    font-size: 2.125rem;
+  }
+  .selectLang {
+    width: 80%;
+    justify-content: space-around;
+    padding: 7px 2px;
+    margin: 7px 5px;
+  }
+  h3 {
+    font-size: 1.4rem;
+  }
+  select {
+    font-size: 1.15rem;
+  }
+  textarea {
+    width: 300px;
+  }
+}
